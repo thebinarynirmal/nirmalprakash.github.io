@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nirmal Prakash Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+	<!-- Font Awesome (general icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Devicons (for tech stack logos) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">NIRMAL PRAKASH</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Nirmal Prakash</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'💻 Frontend Developer  ',
+						'⚡ Electrical Engineer  ',
+						'🚀 Tech Enthusiast   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Front End Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/nirmalrajput26" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/thebinarynirmal" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+<!-- new bout -->
+<!-- ===================== ABOUT (Modern) ===================== -->
+<section id="about-section" class="ftco-section about-modern">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      
+      <!-- Left: Photo card -->
+      <div class="col-lg-4">
+        <div class="about-photo card-dark">
+          <img src="images/about-me.jpg" alt="Nirmal Prakash headshot" class="img-fluid rounded-3">
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="col-lg-8">
+        <div class="about-content">
+          <h2 class="about-title">About <span class="accent">Nirmal</span></h2>
+          <p class="about-blurb">
+           I’m an Electrical Engineering undergraduate at NIT Durgapur specializing in web development and competitive programming. I focus on building performant, accessible interfaces and writing cleaner code that’s maintainable and reliable.
+          </p>
+          <p class="about-blurb">
+            Right now I’m polishing my portfolio, preparing for placements, and shipping small projects—
+            from frontend components to algorithmic templates that make interview prep stress-free.
+          </p>
+
+          <!-- Quick facts -->
+          <div class="row gy-3 quick-facts">
+            <div class="col-sm-6">
+              <div class="fact">
+                <i class="fa-solid fa-user-graduate"></i>
+                <div>
+                  <div class="fact-label">Education</div>
+                  <div class="fact-value">B.Tech (EE), NIT Durgapur — 2026</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="fact">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <div class="fact-label">Location</div>
+                  <div class="fact-value">Durgapur,WB,India</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="fact">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <div class="fact-label">Roles</div>
+                  <div class="fact-value">Developer,Data Analyst,Associate Consultant</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="fact">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <div class="fact-label">Email</div>
+                  <div class="fact-value">
+                    <a href="mailto:nirmalprakashnitdgp@gmail.com">nirmalprakashnitdgp@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Current bullets -->
+          <ul class="about-now">
+  <li><i class="fa-solid fa-rocket"></i> Real-life MERN builds with clean architecture and reusable components.</li>
+  <li><i class="fa-solid fa-trophy"></i> 400+ DS&A problems solved; active competitive programmer</li>
+  <li><i class="fa-solid fa-gauge-high"></i> Performance- and accessibility-driven UIs with consistent code quality.</li>
+</ul>
+
+
+          <!-- CTAs -->
+          <div class="mt-4 d-flex flex-wrap gap-3">
+            <a href="#contact-section" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="YOUR_RESUME_LINK.pdf" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================== /ABOUT (Modern) ===================== -->
+
+<!-- above -->
+
+
+    <!-- <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch"> -->
+				<!-- <div class="row d-flex"> -->
+					<!-- <div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div> -->
+									<!-- Details next to profile image -->
+									<!-- <div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Rishabh Mishra</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div> -->
+
+								<!-- <div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					 -->
+					<!-- <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
+									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section> -->
+
+<!-- RESUME SECTION -->
+ <!-- ===================== RESUME (Fresher Layout) ===================== -->
+<section id="resume-section" class="ftco-section resume-modern">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-9 heading-section text-center ftco-animate">
+        <h2 class="mb-2">Resume</h2>
+        <p>Fresher focused on web development, cleaner code, and competitive programming — showcasing academic excellence and continuous improvement.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Column A: Academic Achievements -->
+      <div class="col-lg-6">
+        <div class="card-block">
+          <h3 class="card-title"><i class="fa-solid fa-award"></i> Academic Achievements</h3>
+          <ul class="timeline">
+            <li>
+              <span class="t-year">2019</span>
+              <div class="t-text">Class 10th <strong>School Topper</strong>.</div>
+            </li>
+            <li>
+              <span class="t-year">2021</span>
+              <div class="t-text">BCECE <strong>Rank 102</strong> (≈1L+ candidates).</div>
+            </li>
+            <li>
+              <span class="t-year">2021</span>
+              <div class="t-text">WBJEE <strong>AIR 1.8K</strong> (≈1.2L+ candidates).</div>
+            </li>
+            <li>
+              <span class="t-year">2022</span>
+              <div class="t-text">JEE Main <strong>96.49 percentile</strong>; Qualified <strong>JEE Advanced</strong> (CRL ~20K).</div>
+            </li>
+            <li>
+              <span class="t-year">CP</span>
+              <div class="t-text">
+                Solved <strong>400+ DS&A</strong> problems; LeetCode <strong>Top 7%</strong> globally; CodeChef Starters 203 <strong>Global Rank 275</strong>.
+              </div>
+            </li>
+          </ul>
+
+          <!-- Profiles -->
+          <div class="profile-links">
+            <a href="https://leetcode.com/u/nirmal_rajput/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode</a>
+            <a href="https://www.codechef.com/users/n1rmal0" target="_blank"><i class="fa-solid fa-chess-knight"></i> CodeChef</a>
+            <a href="https://www.geeksforgeeks.org/user/nirmalgorithms/" target="_blank"><i class="fa-solid fa-lightbulb"></i> GFG</a>
+            <a href="https://github.com/thebinarynirmal" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="http://www.linkedin.com/in/nirmalrajput26" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column B: Education -->
+      <div class="col-lg-6">
+        <div class="card-block">
+          <h3 class="card-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+          <!-- B.Tech -->
+          <div class="edu">
+            <h4>B.Tech — Electrical Engineering</h4>
+            <div class="meta">NIT Durgapur · 2022–2026</div>
+            <!-- <ul class="chips">
+              <li><strong>CGPA:</strong> 6.83 (till Sem 6)</li>
+              <li>Coursework: DS&A, OOP, DBMS, Web Dev</li>
+            </ul>
+            <div class="chips scrollable">
+              <span class="chip muted">Sem 1 — 6.16</span>
+              <span class="chip muted">Sem 2 — 7.10</span>
+              <span class="chip muted">Sem 3 — 7.05</span>
+              <span class="chip muted">Sem 4 — 6.73</span>
+              <span class="chip muted">Sem 5 — 6.50</span>
+              <span class="chip muted">Sem 6 — 7.53</span>
+            </div> -->
+          </div>
+
+          <!-- Class XII -->
+          <div class="edu">
+            <h4>Class XII (BSEB)</h4>
+            <div class="meta">2021</div>
+            <ul class="chips">
+              <li><strong>Percentage:</strong> 74.4%</li>
+            </ul>
+          </div>
+
+          <!-- Class X -->
+          <div class="edu">
+            <h4>Class X (CBSE)</h4>
+            <div class="meta">2019</div>
+            <ul class="chips">
+              <li><strong>Percentage:</strong> 92.8%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =================== /RESUME (Fresher Layout) ===================== -->
+
+ <!-- RESUME SECTION ENDS -->
+
+	
+    <!-- <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">Merkle</span>
+						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2012-2013</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Army Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+	<!-- adding new section -->
+<section id="skills-section" class="ftco-section bg-dark text-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Skills</h2>
+        <p>A collection of my technical skills and expertise honed through various projects and experiences.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Frontend -->
+      <div class="col-md-5 col-lg-3 skill-box">
+        <h3>Frontend</h3>
+        <div class="skill-grid">
+          <span><i class="devicon-html5-plain colored"></i> HTML</span>
+          <span><i class="devicon-css3-plain colored"></i> CSS</span>
+          <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span><i class="devicon-react-original colored"></i> React JS</span>
+          <span><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+          <span><i class="devicon-sass-original colored"></i> SASS</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="col-md-5 col-lg-3 skill-box">
+        <h3>Backend</h3>
+        <div class="skill-grid">
+          <span><i class="devicon-nodejs-plain colored"></i> Node JS</span>
+          <span><i class="devicon-express-original colored"></i> Express JS</span>
+          <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+          <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+          <span><i class="devicon-firebase-plain colored"></i> Firebase</span>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="col-md-5 col-lg-3 skill-box">
+        <h3>Languages</h3>
+        <div class="skill-grid">
+          <span><i class="devicon-c-plain colored"></i> C</span>
+          <span><i class="devicon-cplusplus-plain colored"></i> C++</span>
+          <span><i class="devicon-python-plain colored"></i> Python</span>
+          <span><i class="devicon-java-plain colored"></i> Java</span>
+          <span><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-md-5 col-lg-3 skill-box">
+        <h3>Tools</h3>
+        <div class="skill-grid">
+          <span><i class="devicon-git-plain colored"></i> Git</span>
+          <span><i class="devicon-github-original colored"></i> GitHub</span>
+          <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+          <span><i class="devicon-figma-plain colored"></i> Figma</span>
+          <span><i class="devicon-vercel-original colored"></i> Vercel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<!-- before -->
+   
+
+   <!-- ===================== PROJECTS (Featured + Mini) ===================== -->
+<section id="project-section" class="ftco-section projects-modern">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-8 heading-section text-center ftco-animate">
+        <h2 class="mb-2">Projects</h2>
+        <p>Featured builds and mini projects. I focus on clean architecture, reusable UI, and reliable code.</p>
+      </div>
+    </div>
+
+    <!-- Featured (Wanderlust + Netflix) -->
+    <div class="row g-4">
+      <!-- Wanderlust -->
+      <div class="col-md-6">
+        <article class="project-card feature">
+          <img class="project-img" src="images/wanderlust.jpg" alt="Wanderlust — MERN Travel App screenshot" loading="lazy" decoding="async">
+          <div class="project-body">
+            <h3 class="project-title">Wanderlust — MERN Travel App</h3>
+            <ul class="tags"><li>MERN</li><li>Auth</li><li>CRUD</li><li>Image Uploads</li></ul>
+            <p class="project-text">Travel listings platform with secure auth, listing & review CRUD, image uploads, search & filters, and responsive UI.</p>
+            <div class="links">
+              <a href="YOUR_WANDERLUST_LIVE_URL" target="_blank" rel="noopener">Live</a>
+              <a href="YOUR_WANDERLUST_CODE_URL" target="_blank" rel="noopener">Code</a>
+              <a href="YOUR_WANDERLUST_CASE_STUDY" target="_blank" rel="noopener">Case Study</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Netflix Clone -->
+      <div class="col-md-6">
+        <article class="project-card feature">
+          <img class="project-img" src="images/netflix_bg.webp" alt="Netflix Clone — React + TMDB screenshot" loading="lazy" decoding="async">
+          <div class="project-body">
+            <h3 class="project-title">Netflix Clone — React + TMDB</h3>
+            <ul class="tags"><li>React</li><li>TMDB API</li><li>Firebase Auth</li><li>Responsive</li></ul>
+            <p class="project-text">Movie discovery UI with categorized carousels, search, and authentication; data via TMDB API.</p>
+            <div class="links">
+              <a href="YOUR_NETFLIX_LIVE_URL" target="_blank" rel="noopener">Live</a>
+              <a href="YOUR_NETFLIX_CODE_URL" target="_blank" rel="noopener">Code</a>
+              <a href="YOUR_NETFLIX_CASE_STUDY" target="_blank" rel="noopener">Case Study</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Mini Builds (Portfolio + small stuff) -->
+    <div class="row g-3 mt-4">
+      <div class="col-md-3 col-6">
+        <div class="mini-card">
+          <h4>Portfolio — Personal Site</h4>
+          <p>Dark theme, performance tweaks, a11y, SEO/OG cards.</p>
+          <a href="YOUR_PORTFOLIO_REPO_URL" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <!-- You can keep/remove these as needed -->
+      <div class="col-md-3 col-6">
+        <div class="mini-card">
+          <h4>UI Components Kit</h4>
+          <p>Buttons, modals, toasts, tabs as reusable React components.</p>
+          <a href="YOUR_REPO_COMPONENTS" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="mini-card">
+          <h4>Auth Starter</h4>
+          <p>JWT auth template (Express + Mongo) with clean folder structure.</p>
+          <a href="YOUR_REPO_AUTH" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="mini-card">
+          <h4>API Playground</h4>
+          <p>Weather / GitHub search with caching & error boundaries.</p>
+          <a href="YOUR_REPO_API" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Algorithms / CP -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <article class="project-card highlight">
+          <div class="project-body">
+            <h3 class="project-title">Algorithms & Competitive Programming</h3>
+            <ul class="tags"><li>C++</li><li>DS&A</li><li>Templates</li><li>CP</li></ul>
+            <p class="project-text">
+              Curated C++ templates (graphs, DP, binary search, prefix) with edge-case notes and complexity analysis.
+              Solved <strong>400+ problems</strong>; CodeChef Starters 203 <strong>Global Rank 275</strong>.
+            </p>
+            <div class="links">
+              <a href="https://leetcode.com/u/nirmal_rajput/" target="_blank" rel="noopener">LeetCode</a>
+              <a href="https://www.codechef.com/users/n1rmal0" target="_blank" rel="noopener">CodeChef</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- More -->
+    <div class="row mt-3">
+      <div class="col-12 text-center">
+        <a class="btn btn-outline-light" href="https://github.com/thebinarynirmal" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> More on GitHub
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- =================== /PROJECTS ===================== -->
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Durgapur,West Bengal, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+919523080603</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:nirmalprakashnitdgp@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Nirmal,%20I%20saw%20your%20portfolio%20and...">nirmalprakashnitdgp@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1x969TIx27B45DtA9q2qhvWiIelbwGLlL/view?usp=sharing">NITDGP_CV</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://api.whatsapp.com/send/?phone=%2B919523080603&text=Hi+Nirmal%2C+I+saw+your+resume+and+would+like+to+connect.+Is+now+a+good+time%3F&type=phone_number&app_absent=0" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0 social-icons">
+  <li class="ftco-animate normal-txt">Find me on</li>
+
+  <li class="ftco-animate">
+    <a class="ic" href="https://www.reddit.com/user/nirmal_rajput/" target="_blank" rel="noopener" aria-label="Reddit">
+      <i class="fa-brands fa-reddit-alien"></i>
+    </a>
+  </li>
+
+  <li class="ftco-animate">
+    <a class="ic" href="https://x.com/_nirmalrajput?t=hvxf4dRs8FUdsfX_9yzKpg" target="_blank" rel="noopener" aria-label="X (Twitter)">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  </li>
+
+  <li class="ftco-animate">
+    <a class="ic" href="https://www.instagram.com/_nirmalraajput" target="_blank" rel="noopener" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </li>
+
+  <li class="ftco-animate">
+    <a class="ic" href="https://www.facebook.com/share/1BT1khrSjH/" target="_blank" rel="noopener" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+  </li>
+
+  <li class="ftco-animate">
+    <a class="ic" href="http://www.linkedin.com/in/nirmalrajput26" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </li>
+</ul>
+
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
